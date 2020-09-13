@@ -22,8 +22,8 @@ const sandeep = ["Are you talking about the tall guy??"];
 const Race = ["Let's talk something shall we??"];
 
 const chandana = [
-  "Craziest person don' you think huh??",
-  "Hello,chandana how are you",
+  "Craziest person don't you think huh??",
+  "Hello chandana, how are you",
 ];
 
 const srinu = ["I dont know man", "Nice Person"];
@@ -37,7 +37,7 @@ const avinash = ["Our Cr"];
 const weather = [
   "weather is fine",
   "Its gonna rain today",
-  "Its a nice day for a trip",
+  "Its a nice day for a trip","Better be home soon",
 ];
 
 const time = [hours + "" + minutes + "" + seconds];
