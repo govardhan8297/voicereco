@@ -5,6 +5,12 @@ const hours = date.getHours;
 const minutes = date.getMinutes;
 const seconds = date.getSeconds;
 
+const text = [
+  "I dont know what you are saying",
+  "say that again, i couldnt catch that",
+  "i havent seen that coming",
+];
+
 const greetings = [
   "Im good, how are you",
   "Thats so nice of you",
@@ -54,7 +60,7 @@ btn.addEventListener("click", () => {
 
 function readOutLoud(message) {
   const speech = new SpeechSynthesisUtterance();
-  speech.text = "I dont know what you are saying";
+  speech.text = text[Math.floor(Math.random() * text.length)];
 
   if (message.includes("how are you")) {
     const finalText = greetings[Math.floor(Math.random() * greetings.length)];
