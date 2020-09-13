@@ -17,6 +17,23 @@ const greetings = [
   "Im so lucky to have a friend like you",
 ];
 
+const sandeep = ["Are you talking about the tall guy??"];
+
+const Race = ["Let's talk something shall we??"];
+
+const chandana = [
+  "Craziest person don' you think huh??",
+  "Hello,chandana how are you",
+];
+
+const srinu = ["I dont know man", "Nice Person"];
+
+const purna = ["Doctor babu for all the town"];
+
+const ameer = ["The director"];
+
+const avinash = ["Our Cr"];
+
 const weather = [
   "weather is fine",
   "Its gonna rain today",
@@ -37,7 +54,13 @@ const google = [
   "Present sir",
 ];
 
-const greetings2 = ["helllllo ", "hai, how are you doing today", "hello there"];
+const greetings2 = [
+  "helllllo ",
+  "hai, how are you doing today??",
+  "hello there!!",
+];
+
+const greetings3 = ["Good morning ", "morning", "Having a nice day huh??"];
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -66,6 +89,42 @@ function readOutLoud(message) {
     const finalText = greetings[Math.floor(Math.random() * greetings.length)];
     speech.text = finalText;
   }
+
+  if (message.includes("Srinu")) {
+    const finalText = srinu[Math.floor(Math.random() * srinu.length)];
+    speech.text = finalText;
+  }
+
+  if (message.includes("Chandana")) {
+    const finalText = chandana[Math.floor(Math.random() * chandana.length)];
+    speech.text = finalText;
+  }
+
+  if (message.includes("Avinash")) {
+    const finalText = avinash[Math.floor(Math.random() * avinash.length)];
+    speech.text = finalText;
+  }
+  if (message.includes("Ameer")) {
+    const finalText = ameer[Math.floor(Math.random() * ameer.length)];
+    speech.text = finalText;
+  }
+  if (message.includes("Purna")) {
+    const finalText = purna[Math.floor(Math.random() * purna.length)];
+    speech.text = finalText;
+  }
+  if (message.includes("race")) {
+    const finalText = Race[Math.floor(Math.random() * Race.length)];
+    speech.text = finalText;
+  }
+  if (message.includes("Sandeep")) {
+    const finalText = sandeep[Math.floor(Math.random() * sandeep.length)];
+    speech.text = finalText;
+  }
+  if (message.includes("morning")) {
+    const finalText = greetings3[Math.floor(Math.random() * greetings3.length)];
+    speech.text = finalText;
+  }
+
   if (message.includes("how is the weather")) {
     const finalText = weather[Math.floor(Math.random() * weather.length)];
     speech.text = finalText;
