@@ -37,7 +37,7 @@ const google = [
   "Present sir",
 ];
 
-const greetings2 = ["hai", "hai, how are you doing today", "hello there"];
+const greetings2 = ["helllllo ", "hai, how are you doing today", "hello there"];
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -82,7 +82,7 @@ function readOutLoud(message) {
     const finalText = google[Math.floor(Math.random() * google.length)];
     speech.text = finalText;
   }
-  
+
   if (message.includes("Siri")) {
     const finalText = google[Math.floor(Math.random() * google.length)];
     speech.text = finalText;
