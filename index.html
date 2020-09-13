@@ -10,10 +10,17 @@
 
     <title>Document</title>
     <style>
+      h2 {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
       button {
-        margin-left: 45%;
-        margin-top: 25%;
         font-size: 18px;
+      }
+      .container {
+        text-align: center;
       }
       .content {
         width: 53%;
@@ -24,10 +31,15 @@
     </style>
   </head>
   <body>
-    <button class="talk" type="button">
-      <i class="fa fa-microphone" aria-hidden="true"></i></button
-    ><br /><br />
+    <h2>Speak Up</h2>
+    <br />
+    <div class="container">
+      <button class="talk" type="button">
+        <i class="fa fa-microphone" aria-hidden="true"></i>
+      </button>
+    </div>
+    <br /><br />
     <h3 class="content"></h3>
-    <script src="script.js"></script>
+    <script src="voicereco.js"></script>
   </body>
 </html>
