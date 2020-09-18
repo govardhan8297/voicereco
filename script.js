@@ -37,7 +37,8 @@ const avinash = ["Our Cr"];
 const weather = [
   "weather is fine",
   "Its gonna rain today",
-  "Its a nice day for a trip","Better be home soon",
+  "Its a nice day for a trip",
+  "Better be home soon",
 ];
 
 const time = [hours + "" + minutes + "" + seconds];
