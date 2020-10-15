@@ -19,10 +19,10 @@ const greetings = [
 
 const sandeep = ["Are you talking about the tall guy??"];
 
-const Race = ["Let's talk something shall we??"];
+const Race = ["Let's talk something, shall we??"];
 
 const chandana = [
-  "Craziest person don't you think huh??",
+  "Craziest person don't you think, huh??",
   "Hello chandana, how are you",
 ];
 
@@ -50,7 +50,7 @@ const introduce = [
 ];
 
 const google = [
-  "Im not google just a similar type of that, you can call me naga",
+  "I'm not google just a similar type of that, you can call me naga",
   "At your service",
   "Present sir",
 ];
@@ -60,6 +60,14 @@ const greetings2 = [
   "hai, how are you doing today??",
   "hello there!!",
 ];
+const getTime = () => {
+  const time = new Date(Date.now());
+  return `the time is ${time.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  })}`;
+};
 
 const greetings3 = ["Good morning ", "morning", "Having a nice day huh??"];
 
@@ -152,9 +160,8 @@ function readOutLoud(message) {
     speech.text = finalText;
   }
 
-  if (message.includes("time")) {
-    const finalText = time[Math.floor(Math.random() * time.length)];
-    speech.text = finalText;
+  if (message.includes("what is the time")) {
+    speak(getTime);
   }
 
   speech.volume = 1;
