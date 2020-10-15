@@ -161,7 +161,7 @@ function readOutLoud(message) {
         hour12: true,
       })}`;
     };
-    speech.text = finalText;
+    speech.text = getTime;
   }
 
   speech.volume = 1;
