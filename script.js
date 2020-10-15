@@ -138,6 +138,10 @@ function readOutLoud(message) {
     const finalText = greetings2[Math.floor(Math.random() * greetings2.length)];
     speech.text = finalText;
   }
+  if (message.includes("hello")) {
+    const finalText = greetings2[Math.floor(Math.random() * greetings2.length)];
+    speech.text = finalText;
+  }
   if (message.includes("Google")) {
     const finalText = google[Math.floor(Math.random() * google.length)];
     speech.text = finalText;
