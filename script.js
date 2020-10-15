@@ -60,14 +60,6 @@ const greetings2 = [
   "hai, how are you doing today??",
   "hello there!!",
 ];
-const getTime = () => {
-  const time = new Date(Date.now());
-  return `the time is ${time.toLocaleString("en-US", {
-    hour: "numeric",
-    minute: "numeric",
-    hour12: true,
-  })}`;
-};
 
 const greetings3 = ["Good morning ", "morning", "Having a nice day huh??"];
 
@@ -161,7 +153,15 @@ function readOutLoud(message) {
   }
 
   if (message.includes("what is the time")) {
-    speak(getTime);
+    const getTime = () => {
+      const time = new Date(Date.now());
+      return `the time is ${time.toLocaleString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      })}`;
+    };
+    speech.text = finalText;
   }
 
   speech.volume = 1;
