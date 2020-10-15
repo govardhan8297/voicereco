@@ -6,9 +6,9 @@ const minutes = date.getMinutes;
 const seconds = date.getSeconds;
 
 const text = [
-  "I dont know what you are saying",
-  "say that again, i couldnt catch that",
-  "i havent seen that coming",
+  "I don't know what you are saying",
+  "say that again, i couldn't catch that",
+  "i haven't seen that coming",
 ];
 
 const greetings = [
